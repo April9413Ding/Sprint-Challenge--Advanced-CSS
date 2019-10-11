@@ -1,0 +1,44 @@
+.signup{
+
+    .walk{
+        padding: 20% 0;
+        .flex();
+
+        @media @phone{
+            flex-direction: column-reverse;
+        }
+
+        .walk-text{
+            .flex(@direc:column);
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        h3{
+            margin: 1rem 0;
+        }
+
+        form{
+            .flex(@direc:column);
+            width: 100%;
+
+            input{
+                width: 70%;
+                padding:1rem;
+                margin: 2rem 0;
+            }
+        }
+
+        .btn{
+            margin: 2rem 0;
+            text-decoration: none;
+            width: 70%;
+            .prim-btn();
+
+            &:hover{
+                .prim-btn(@bg:white,@ft-color:@btn-bg-color);
+            }
+        }
+    }
+
+}

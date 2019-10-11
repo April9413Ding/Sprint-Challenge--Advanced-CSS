@@ -167,9 +167,12 @@ nav {
   align-items: center;
   justify-items: center;
   align-content: center;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.7);
   border-bottom: 1px solid #F1F1F1;
   padding: 1.5rem 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
 }
 nav div {
   display: flex;
@@ -195,6 +198,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding-top: 13%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -289,6 +295,7 @@ footer {
   padding: 1rem 1.5rem;
   text-align: center;
   width: 35%;
+  text-decoration: none;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
@@ -319,4 +326,138 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.signup .walk {
+  padding: 20% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+@media (max-width:500px) {
+  .signup .walk {
+    flex-direction: column-reverse;
+  }
+}
+.signup .walk .walk-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+.signup .walk h3 {
+  margin: 1rem 0;
+}
+.signup .walk form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+}
+.signup .walk form input {
+  width: 70%;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.signup .walk .btn {
+  margin: 2rem 0;
+  text-decoration: none;
+  width: 70%;
+  background-color: #22283A;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+.signup .walk .btn:hover {
+  background-color: white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #22283A;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+.contact .walk {
+  padding: 20% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+@media (max-width:500px) {
+  .contact .walk {
+    flex-direction: column-reverse;
+  }
+}
+.contact .walk .address {
+  width: 70%;
+}
+.contact .walk .walk-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+.contact .walk h3 {
+  margin: 1rem 0;
+}
+.contact .walk form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+}
+.contact .walk form input {
+  width: 70%;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 1px solid #dee2e6;
+}
+.contact .walk form textarea {
+  width: 70%;
+  padding: 1rem;
+  margin: 2rem 0;
+  border: 1px solid #dee2e6;
+}
+.contact .walk .btn {
+  margin: 2rem 0;
+  text-decoration: none;
+  width: 70%;
+  background-color: #22283A;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+.contact .walk .btn:hover {
+  background-color: white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #22283A;
+  padding: 1rem 1.5rem;
+  text-align: center;
 }
