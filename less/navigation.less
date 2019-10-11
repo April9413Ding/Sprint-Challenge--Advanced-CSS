@@ -1,1 +1,19 @@
 // Navigation code here
+nav{
+    .flex(@direc:column);
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    padding: 1.5rem 0;
+
+    div{
+        .flex();
+        margin-top: 1.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color:@nav-font;
+        font-size: 1.6rem;
+        margin: 0 1.5rem;
+    }
+}

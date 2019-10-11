@@ -11,6 +11,11 @@
     p {
       padding:0 15px;
     }
+
+    img{
+      border-radius: 0.5rem;
+      width: 100%;
+    }
   
   }
 
@@ -24,6 +29,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+        width:100%;
+      }
+    }
+
+    .sky, .launch{
+      @media @phone{
+        display: none;
+      }
     }
   }
 
@@ -46,11 +61,25 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      .flex(@direc:column-reverse);
+      padding:2rem;
+    }
+
     .walk-text {
       width: 50%;
+      .flex(@direc:column, @a-i: start);
+
+      @media @phone{
+        width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
+
+        @media @phone{
+          margin-top:2rem;
+        }
       }
 
       p {
@@ -58,12 +87,28 @@
       }
 
       .btn {
+        .prim-btn();
+        width: 35%;
+
+        &:hover{
+          .prim-btn(@bg:white,@ft-color:@btn-bg-color);
+        }
+
+        @media @phone{
+          width: 100%;
+          padding:2rem 0;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+        margin:0;
+      }
       
       img {
         width: 100%;

@@ -1,1 +1,19 @@
 // Mixins Here
+.flex(@direc:row, @j-c:space-between, @a-i:center, @j-i:center, @a-c:center){
+    display: flex;
+    flex-direction: @direc;
+    justify-content: @j-c;
+    align-items: @a-i;
+    justify-items: @j-i;
+    align-content: @a-c;
+}
+
+.prim-btn(@bg:@btn-bg-color,@ft-color:white){
+    background-color: @bg;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: @ft-color;
+    padding:1rem 1.5rem;
+    text-align: center;
+}
